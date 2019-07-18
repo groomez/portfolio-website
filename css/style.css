@@ -1,0 +1,83 @@
+/*
+Colors used:
+Primary Color (Martini Blue): #52B6D6;
+Secondary Color (Dark Blue): #1E2633;
+Tertiary(?) Color (Racing Red): #CA0000;
+Highlight Color (Podium Gold): #BC990A;
+*/
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* sets font size to 16px */
+    font-weight: 400; /* sets font weight to 300 */
+    line-height: 1.6; /* sets line height to 1.6 * the font size */
+    color: #1E2633;
+}
+h1, h2, h3, h4 {
+    line-height: 1.4;
+}
+h1 {
+    font-family: 'Raleway';
+    line-height: 1.4;
+    font-size: 2.75em;
+    font-weight: 700;
+}
+h2 {
+    font-family: 'Raleway';
+    font-size: 2.25em;
+    font-weight: 700;
+}
+h3 {
+    font-family: 'Raleway';
+    font-size: 1.75em;
+    font-weight: 400;
+}
+h4 {
+    font-family: 'Raleway';
+    font-size: 1.35em;
+    font-weight: 400;
+}
+img {
+    width: 100%;
+}
+a {
+    color: #52B6D6;
+    text-decoration: none; /* No underlining */
+}
+  a:visited { /* visited link */
+    color: #52B6D6;
+}
+a:focus
+a:hover {
+    color: #1E2633;
+    text-decoration: underline; /* Underlining when hovering over a link */
+}
+  a:active { /* selected link */
+    color: #1E2633;
+}
+
+.button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #1E2633;
+    color: #ffffff !important; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #0b112ccb; /* width of the border, type, color */
+    transition: 0.2s opacity;
+}
+.button:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+}
+.button.contact {
+    background-color: transparent;
+    color: #1E2633 !important;
+    text-transform: uppercase;
+    border: 2px solid #1E2633;
+}
+.button.contact:hover {
+    background-color: #1E2633;
+    color: #ffffff !important;
+}
