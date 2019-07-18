@@ -1,11 +1,13 @@
-/*
+/****
 Colors used:
 Primary Color (Martini Blue): #52B6D6;
 Secondary Color (Dark Blue): #1E2633;
 Tertiary(?) Color (Racing Red): #CA0000;
 Highlight Color (Podium Gold): #BC990A;
-*/
+*****/
 
+
+/***** Body STYLES ONLY, YO *****/
 body {
     background-color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
@@ -14,6 +16,8 @@ body {
     line-height: 1.6; /* sets line height to 1.6 * the font size */
     color: #1E2633;
 }
+
+/***** TEXT STYLES ONLY, YO *****/
 h1, h2, h3, h4 {
     line-height: 1.4;
 }
@@ -38,9 +42,13 @@ h4 {
     font-size: 1.35em;
     font-weight: 400;
 }
+
+/***** IMAGES ONLY YA HERD?!  ********/
 img {
     width: 100%;
 }
+
+/***** LINKS AND BUTTONS DUDE!! ****/
 a {
     color: #52B6D6;
     text-decoration: none; /* No underlining */
@@ -56,7 +64,6 @@ a:hover {
   a:active { /* selected link */
     color: #1E2633;
 }
-
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #1E2633;
