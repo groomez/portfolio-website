@@ -21,11 +21,12 @@
 
   <body>
     <header>
-      <div id="logo">
+      <div id="logo" class="container">
         <a href="index.html">
           <div>
             <img
-              src="img/name_logo_150x50px.png?text=Logo"
+              class="logo"
+              src="img/name_logo_250x90px.png?text=Logo"
               alt="Shaun Groomes"
             />
           </div>
@@ -41,33 +42,34 @@
     </header>
     <main>
       <div>
-        <div id="hero">
+        <div id="hero" class="container">
           <h1>
             Hi, my name is Shaun Groomes and I'm a problem solver based out of
             Greenville, SC.
           </h1>
-          <span
-            >In addition to solving key problems within organizations, I can
-            also grow the heck out of your business.</span
-          >
+
+          <p>
+            In addition to solving key problems within organizations, I can also
+            grow the heck out of your business.
+          </p>
 
           <p>
             If you're not sure how to move your company forward,
             <a href="#contact">I can help.</a>
           </p>
           <p>
-            I currently serve as a UX/UI Designer and Product Liaison at
+            I currently serve as a UX/UI Designer at
             <a href="https://shipchain.io" target="_blank">ShipChain.</a>
           </p>
         </div>
 
-        <div id="work">
+        <div id="work" class="container">
           <div>
             <!--the main block div that contains all the work heck-->
             <h2>The Work</h2>
-            <div>
+            <div class="row">
               <!-- open row that holds (2) columns for project -->
-              <div>
+              <div class="column">
                 <!-- open first column (used for image) -->
                 <picture>
                   <source
@@ -79,7 +81,7 @@
               </div>
               <!-- end first column -->
 
-              <div>
+              <div class="column">
                 <!-- open second column (used for text) -->
                 <h3>Ink Tank</h3>
                 <p>
@@ -103,7 +105,7 @@
         <!--end work div-->
       </div>
     </main>
-    <footer id="contact">
+    <footer id="contact" class="container">
       <div>
         <!-- main container for footer-->
         <h2>Want to Get In Touch?</h2>
@@ -121,7 +123,7 @@
           >
         </div>
         <!--ending email div, RIP.-->
-        <div>
+        <div class="social">
           <!-- this is for social media icons -->
           <ul>
             <li>
