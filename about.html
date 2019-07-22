@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/23d9c3f2a3.js"></script>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -20,11 +21,12 @@
 
   <body>
     <header>
-      <div id="logo">
+      <div id="logo" class="container">
         <a href="index.html">
           <div>
             <img
-              src="img/name_logo_150x50px.png?text=Logo"
+              class="logo"
+              src="img/name_logo_250x90px.png?text=Logo"
               alt="Shaun Groomes"
             />
           </div>
@@ -39,7 +41,7 @@
       </nav>
     </header>
     <main>
-      <div id="about">
+      <div id="about" class="container">
         <!--1st main div-->
         <div>
           <!-- About me container -->
@@ -47,8 +49,9 @@
         </div>
         <!-- end about me container -->
       </div>
+      
       <!-- end 1st main div -->
-      <div>
+      <div class="container">
         <!-- 2nd main div -->
         <picture>
           <source
@@ -56,10 +59,10 @@
             media="(max-width:767px)"
           />
           <img src="img/about/shaun_on_balcony@2x.jpg" alt="Shaun Groomes" />
-          <caption>
+          <div class="caption">
             Looking away from the camera invokes the highest essence of smooth
             and cool, obviously. Taken at St. Thomas, USVI
-          </caption>
+          </div>
         </picture>
         <div>
           <!-- container for columns -->
@@ -131,7 +134,6 @@
                 <li>Wireframing</li>
                 <li>Prototyping</li>
                 <li>Journey Maps</li>
-                <li>Journey Maps</li>
               </ul>
             </div>
             <!-- end div for skills-->
@@ -155,7 +157,7 @@
       </div>
       <!-- end container -->
     </main>
-    <footer id="contact">
+    <footer id="contact" class="container">
       <div>
         <!-- main container for footer-->
         <h2>Want to Get In Touch?</h2>
@@ -173,7 +175,7 @@
           >
         </div>
         <!--ending email div, RIP.-->
-        <div>
+        <div class="social">
           <!-- this is for social media icons -->
           <ul>
             <li>
@@ -204,9 +206,9 @@
           <!--this div is for the copyright section -->
           <p>Copyright &#169; Shaun Groomes 2019</p>
         </div>
-        <!-- ending this is all copyright-ed, no steal -->
+        <!-- ending this is all copyright, no steal -->
       </div>
-      <!-- end footer container, make monies-->
+      <!-- end footer container-->
     </footer>
   </body>
 </html>
