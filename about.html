@@ -19,7 +19,7 @@
     <title>Who is Shaun Groomes? | South Carolina Designer</title>
   </head>
 
-  <body>
+  <body id="about">
     <header>
       <div id="logo" class="container">
         <a href="index.html">
@@ -31,17 +31,18 @@
             />
           </div>
         </a>
+        <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact">Get In Touch</a></li>
+            </ul>
+          </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Get In Touch</a></li>
-        </ul>
-      </nav>
+      
     </header>
     <main>
-      <div id="about" class="container">
+      <div class="container">
         <!--1st main div-->
         <div>
           <!-- About me container -->
@@ -65,8 +66,9 @@
           </div>
         </picture>
         <div>
+            <div class="row">
           <!-- container for columns -->
-          <div>
+          <div class="col-md-6">
             <!-- column 1 for my little story -->
             <h2>My Story</h2>
             <p>
@@ -81,7 +83,8 @@
             <p>
               Upon leaving the military in 2007 and returning home, I started
               bartending. This was a key moment of my life that taught me how to
-              handle people under pressure. I’m a firm believer that working in
+              handle people under civilian-life pressure <i>(the kind where you can't yell at anyone
+              without losing your job)</i>. I’m a firm believer that working in
               the service industry helps develop how to actually talk to people
               in the real world.
             </p>
@@ -109,7 +112,7 @@
             </p>
             <p>
               I’m currently designing the user experience and interface of the
-              mobile app for ShipChain - a blockchain logistics company based in
+              mobile app for <a href="https://shipchain.io" target="_blank">ShipChain</a> - a blockchain logistics company based in
               Greenville, South Carolina.
             </p>
             <div>
@@ -121,11 +124,12 @@
             <!-- end CTA-->
           </div>
           <!-- end column 1 -->
-          <div>
+          <div class="col-md-6">
             <!-- column 2 for skills n tools -->
-            <div>
+            <h2>Skills and Tools</h2>
+            <div class="skills">
               <!-- div for skills-->
-              <h2>Skills and Tools</h2>
+              
               <h3>Skillset</h3>
               <ul>
                 <li>UX Research</li>
@@ -137,7 +141,7 @@
               </ul>
             </div>
             <!-- end div for skills-->
-            <div>
+            <div class="skills">
               <!-- div for tools -->
               <h3>Tools I Use</h3>
               <ul>
@@ -154,6 +158,7 @@
           <!-- end column 2 -->
         </div>
         <!-- end container for columns -->
+      </div>
       </div>
       <!-- end container -->
     </main>
