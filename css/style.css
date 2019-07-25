@@ -62,24 +62,69 @@ h4 {
 img {
   width: 100%;
 }
+@keyframes pulse {
+  0% {
+    fill: #ffffff;
+  }
+  49% {
+    color: transparent;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    fill: #CA0000;
+  }
+}
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 25px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0, 30px);
+  }
+}
+/* radio tower light */
+.st50 {
+  animation: .9s pulse infinite alternate linear;
+}
+/* left cloud */
+.st46 {
+  animation: 30s cloud-move infinite alternate linear;
+}
+/* right cloud */
+.st45 {
+  animation: 10s cloud-move-reverse infinite alternate linear;
+}
 
-/***** LINKS AND BUTTONS DUDE!! ****/
+/***** LINKS AND BUTTONS ****/
 a {
   color: #52b6d6;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
 }
 a:visited {
   /* visited link */
-  color: #52b6d6;
+  color: #3eacc6;
+  text-decoration: none;
 }
 a:focus a:hover {
   color: #1e2633;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
 }
 a:active {
   /* selected link */
   color: #1e2633;
+  text-decoration: underline;
 }
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ca0000;
@@ -88,12 +133,14 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #930505; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.6s;
+  transition-property: opacity;
 }
 .button:hover {
   background-color: #1e2633;
   border-bottom: 2px solid #090f16;
   text-decoration: none;
+  opacity: 0.6;
 }
 .button.contact {
   background-color: transparent;
@@ -124,6 +171,13 @@ a:active {
 #about .row {
   padding-bottom: 25px;
   border-bottom: 3px solid #bc990a;
+}
+#project .row {
+  padding-bottom: 25px;
+  border-bottom: 3px solid #bc990a;
+}
+#project h1 {
+  text-align: center;
 }
 #about h1 {
   text-align: center;
@@ -190,7 +244,6 @@ nav > ul > li > a:active {
 #hero {
   background-color: #1e2633;
   padding: 20px 0;
-  display: inline-block;
   width: 100%;
 }
 main {
@@ -198,7 +251,76 @@ main {
 }
 .caption {
   color: #bc990a;
-  font-size: .85em;
+  font-size: 0.85em;
   font-family: courier;
   font-style: italic;
+}
+.tr-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 15px;
+  }
+  .logo {
+    float: left;
+  }
+  #hero span {
+    display: block;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #about h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  main {
+    padding-top: 99px;
+  }
+  .skills {
+    padding-left: 15px;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58%;
+  }
+  .col-lg-5 {
+    width: 42%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main {
+    padding-top: 99px;
+  }
+  .skills {
+    float: left;
+  }
 }
