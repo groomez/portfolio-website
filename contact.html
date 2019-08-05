@@ -20,25 +20,36 @@
   </head>
   <body>
     <header>
-      <div id="logo">
-        <a href="index.html">
-          <div>
-            <img
-              class="logo"
-              src="img/name_logo_250x90px.png?text=Logo"
-              alt="Shaun Groomes"
-            />
-          </div>
-        </a>
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Get In Touch</a></li>
-          </ul>
-        </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <div id="logo" class="container">
+          <a href="index.html">
+            <div>
+              <img
+                class="logo"
+                src="img/name_logo_250x90px.png?text=Logo"
+                alt="Shaun Groomes"
+              />
+            </div>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <a href="#contact" onclick="menuToggle()">Get In Touch</a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      
     </header>
     <script src="js/scripts.js"></script>
   </body>
