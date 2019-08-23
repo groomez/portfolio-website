@@ -1,9 +1,10 @@
 /****
 Colors used:
 Primary Color (Martini Blue): #52B6D6;
+Links Color (Usability Boring Blue): #25809E;
 Secondary Color (Dark Blue): #1E2633;
 Tertiary(?) Color (Racing Red): #CA0000;
-Highlight Color (Podium Gold): #BC990A;
+Highlight Color (Podium Gold): #8E7408;
 *****/
 
 /***** Body STYLES ONLY, SON! *****/
@@ -75,7 +76,7 @@ img {
     color: transparent;
   }
   100% {
-    fill: #CA0000;
+    fill: #ca0000;
   }
 }
 @keyframes cloud-move {
@@ -96,7 +97,7 @@ img {
 }
 /* radio tower light */
 .st50 {
-  animation: .9s pulse infinite alternate linear;
+  animation: 0.9s pulse infinite alternate linear;
 }
 /* left cloud */
 .st46 {
@@ -109,12 +110,12 @@ img {
 
 /***** LINKS AND BUTTONS ****/
 a {
-  color: #52b6d6;
+  color: #25809E;
   text-decoration: none;
 }
 a:visited {
   /* visited link */
-  color: #3eacc6;
+  color: #25809E;
   text-decoration: none;
 }
 a:focus a:hover {
@@ -224,8 +225,9 @@ nav > ul {
 .navtoggle li:not(:last-child) {
   display: none;
 }
-.navtoggle, .navtoggle.responsive {
-  position:  relative;
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
 }
 .navtoggle li .icon {
   position: absolute;
@@ -243,7 +245,7 @@ nav > ul > li > a {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #BC990A;
+  border-top: 1px solid #bc990a;
 }
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
@@ -266,7 +268,7 @@ main {
   padding-top: 75px;
 }
 .caption {
-  color: #bc990a;
+  color: #8E7408;
   font-size: 0.85em;
   font-family: courier;
   font-style: italic;
