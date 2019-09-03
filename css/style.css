@@ -330,6 +330,9 @@ Medium devices (641px and larger)
     margin-top: 0;
     margin-bottom: 0;
   }
+  #about h2 {
+    margin-top: 0;
+  }
   main {
     padding-top: 99px;
   }
